@@ -1,0 +1,84 @@
+/* splash */
+#splash{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #fbe9e7;
+}
+#splash img{
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+}
+/* menu */
+.menu{
+    margin-top: 8%;
+    margin-right: 5%;
+    color: white;
+    font-size: 3em;
+}
+/* mapa */
+#map{
+    margin: 0;
+    padding: 0;
+}
+#subtitle{
+    margin: 0;
+    
+}
+/* busqueda */
+#categorias{
+    display: inline-block;
+    border: 1px solid #fbe9e7;
+}
+
+/* imagenes */
+.imagen{
+    width: 100%;
+    height: 7em;
+    object-fit: cover;
+}
+.imagen-food{
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+
+/* modal */
+
+.modal-btn:hover{
+    cursor: pointer;
+}
+.modal-prueba {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.modal-container {
+    position: fixed;
+    max-width: 780px;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    text-align: center;
+    width: 90%;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.modal--show {
+    visibility: visible;
+    background-color: #fbe9e7;
+    height: 10em;
+    width: 60%;
+}

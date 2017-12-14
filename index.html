@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>food Map</title>
+</head>
+<body>
+    <section id="splash">
+        <div class="row">
+            <div class="col s12">
+                <img src="assets/images/logoFoodMap.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <header class="deep-orange">
+        <div class="row">
+            <div class="col s6">
+                <img src="assets/images/foodMap-blanco.svg" alt="">
+            </div>
+            <div class="col s6 right-align">
+                <span class="material-icons menu">reorder</span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col s12 center-align" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26624.497322123334!2d-70.58949394852884!3d-33.47373224843023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+a+domicilio!5e0!3m2!1ses!2scl!4v1513136233398" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col s12 center-align">
+                <h5 class="deep-orange-text">¡Comienza tu Pedido ahora!</h5>
+                <h6 class="grey-text" id="subtitle">Encuentra restaurantes cerca de ti</h6>
+            </div>
+    </section>
+    <section class="container">
+        <div class="row">
+           <div class="col s12">
+                <select id="categorias">
+                    <option value="0" disabled selected>Selecciona tu tipo de comida...</option>
+                    <option value="china">China</option>
+                    <option value="mexicana">Mexicana</option>
+                    <option value="japonesa">Japonesa</option>
+                    <option value="italiana">Italiana</option>
+                    <option value="chilena">Chilena</option>
+                </select>
+            </div>
+        </div>
+    </section>
+     <!--<section class="container">
+        <div class="row">
+            <div class="col s12" id="food">
+            
+            </div>
+        </div>-->
+    </section>
+    <section class="container">
+        <div id="food">
+            <div class="row">
+                <div class="col s6">
+                    <img src="assets/images/china.jpg" alt="" class="imagen efecto1 modal-btn">
+                </div>
+                <div class="modal-container">
+                    <div class="modal-content">
+                      <h4>Comida China</h4>
+                      <p>Hao Wa</p>
+
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close">Pedir Ahora</a>
+                    </div>
+                    <div class="modal-prueba"></div>
+                  </div>
+                <div class="col s6">
+                    <img src="assets/images/mexicana.jpg" alt="" class="imagen efecto2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                <img src="assets/images/japonesa.jpg" alt="" class="imagen efecto3">
+                </div>
+                <div class="col s4">
+                <img src="assets/images/italiana.png" alt="" class="imagen efecto4">
+                </div>
+                <div class="col s4">
+                    <img src="assets/images/chilena.jpg" alt="" class="imagen efecto5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col s12" id="food">
+                
+            </div>
+        </div>
+    </section>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script> 
+      <!-- Base de datos -->
+      <script src="assets/js/data.js"></script>
+     <script src="assets/js/app.js"></script>
+</body>
+</html>
